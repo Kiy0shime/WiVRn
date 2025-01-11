@@ -251,7 +251,7 @@ FetchContent_Declare(uni-algo      EXCLUDE_FROM_ALL SYSTEM URL https://github.co
 file(GLOB MONADO_PATCHES CONFIGURE_DEPENDS patches/monado/*)
 # Server dependencies
 FetchContent_Declare(monado
-    GIT_REPOSITORY   https://gitlab.freedesktop.org/monado/monado
+    GIT_REPOSITORY   https://gitlab.freedesktop.org/kiyoshime/monado
     # The flatpak manifest is updated automatically
     GIT_TAG e5f5461dff2d745b3abd19cd05785d815304b2c6
     PATCH_COMMAND    ${CMAKE_CURRENT_LIST_DIR}/patches/apply.sh ${MONADO_PATCHES}
